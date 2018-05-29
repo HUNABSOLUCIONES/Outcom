@@ -1,0 +1,57 @@
+.elemento_oculto{
+    display: none;
+    z-index: 200;
+}
+
+.elemento{
+    z-index: 200;
+}
+
+#l6_s1_1{
+    position: absolute;
+    left: 10vw;
+    top: 40vh;
+    min-width: 155px;
+}
+
+#l6_s1_2{
+    position: absolute;
+    left: 10vw;
+    top: 50vh;
+    min-width: 155px;
+}
+
+#l6_s1_3{
+    position: absolute;
+    left: 10vw;
+    top: 40vh;
+    min-width: 155px;
+}
+
+#l6_s1_4{
+    position: absolute;
+    left: 10vw;
+    top: 50vh;
+    min-width: 155px;
+}
+
+#l6_s1_5{
+    position: absolute;
+    left: 10vw;
+    top: 40vh;
+    min-width: 155px;
+}
+
+#l6_s1_6{
+    position: absolute;
+    left: 10vw;
+    top: 56vh;
+    min-width: 155px;
+}
+
+#l6_s1_7{
+    position: absolute;
+    left: 23vw;
+    top: 55vh;
+    min-width: 155px;
+}

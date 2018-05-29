@@ -1,0 +1,76 @@
+<div id="slide2" class="item">
+        
+    <div class="animated fadeInLeft"><img class="logo" src="images/generales/por_logos.png" alt=""></div>
+
+    <div id="elemento_1" class="elemento elemento_oculto">
+        <img src="images/L1_P1_6a_1.png" alt="">
+    </div>
+
+    <div id="elemento_2" class="elemento elemento_oculto">
+        <img src="images/L1_P1_6a_2.png" alt="">
+    </div>
+
+    <div id="elemento_3" class="elemento elemento_oculto">
+        <img src="images/L1_P1_6b_1.png" alt="">
+    </div>
+
+    <div id="elemento_4" class="elemento elemento_oculto">
+        <img src="images/L1_P1_6b_2.png" alt="">
+    </div>
+
+    <div id="elemento_5" class="elemento elemento_oculto">
+        <img src="images/L1_P1_6c_1.png" alt="">
+    </div>
+
+    <div id="elemento_6" class="elemento elemento_oculto">
+        <img src="images/click_aqui.png" alt="">
+    </div>
+
+    <div id="elemento_7" class="elemento next elemento_oculto">
+        <img src="images/L2_Portada_4.png" alt="">
+    </div>
+        
+        
+    <div class=" derecha">
+                <video class="video" id="video1" preload="auto" > 
+                    <source src="video/1.mp4" type="video/mp4">
+            </video>
+    </div>
+
+    <div class=" derecha">
+            <video class="video" id="loop" preload="none" loop> 
+                    <source src="video/loop.mp4" type="video/mp4">
+            </video>
+    </div>
+
+</div>
+
+
+<script>
+
+    $('document').ready(function() {
+        var vid = document.getElementById("video1");
+        var vid2 = document.getElementById("loop");
+            vid.oncanplaythrough = function() {
+                $('#slide1').show();
+                this.play();
+            $('#loop').hide();
+
+            $("#video1").on("ended", function() {
+                $('#video1').fadeOut();
+                $('#loop').fadeIn();      
+                vid2.play();
+            });
+        };
+
+        vid.addEventListener("timeupdate",function(){
+            if(vid.currentTime>2&& vid.currentTime<3){
+            elementFadeIn("elemento_1");
+            }
+
+
+        });
+
+
+    });
+</script>

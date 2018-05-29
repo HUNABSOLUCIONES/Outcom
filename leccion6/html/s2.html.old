@@ -1,0 +1,314 @@
+<div id="slide2" class="item dos">
+
+  <div class="animated fadeInLeft s1_s"><img src="devgrup1/images/ego/por_logos.png" alt=""></div>
+  <!--<div class="animated fadeInUp p0_4"><img src="devgrup1/images/ego/por_barradown.png" alt=""></div>-->
+
+  <div class="animated fadeInRight btn_2">
+    <div class="btn_2_el1"><img src="images/leccion2/L2_Header_Titulo.png" alt=""></div>
+    <div class="btn_2_el2 men">
+      <div><img class="prev" src="devgrup1/images/leccion2/L2_Header_Boton1.png" alt=""></div>
+      <div><img class="play" src="devgrup1/images/leccion2/L2_Header_Boton2play.png" alt="" style="display: none;"><img src='devgrup1/images/leccion2/L2_Header_Boton2pausa.png' class='pause' alt=''><img class="stop" src="devgrup1/images/leccion2/bt_Play_Cancel.png" alt="" style="display: none;"></div>
+      <div><img class="reset" src="devgrup1/images/leccion2/L2_Header_Boton3.png" alt=""></div>
+      <div class="btn_next_false"><img src="devgrup1/images/leccion2/L2_Header_Boton4_cancel.png" alt=""></div>
+      <div class="btn_next_true" style="display: none;"><img class="next" src="devgrup1/images/leccion2/L2_Header_Boton4.png" alt="" ></div>
+    </div>
+  </div>
+
+  <div class="animated fadeInRight mensaje opcion" style="display: none;"><img src="devgrup1/images/leccion2/L2_32d_2.png" alt=""></div>
+  
+   <div class="filter animated " style="display: none;"></div>
+
+  <div class="container contenedor s2">
+    
+      <div class="s2_n1 animated zoomIn" style="display: none;">
+        <img src="devgrup1/images/leccion2/L2_29a_1.png" alt="">
+      </div>
+
+      <div class="animated zoomIn s2_n2" style="display: none;">
+        <img src="devgrup1/images/leccion2/L2_29a_2.png" alt="">
+      </div>
+
+      <div class="animated s2_n3" style="display: none;">
+        <img src="devgrup1/images/leccion2/L2_29b_1.png" alt="">
+      </div>
+
+      <div class="animated s2_n4" style="display: none;">
+       <img src="devgrup1/images/leccion2/L2_29b_2.png" alt="">
+      </div>
+
+      <div class="animated s2_n5" style="display: none;">
+       <img src="devgrup1/images/leccion2/L2_29b_3.png" alt="">
+      </div>
+
+      <div class="animated zoomIn s2_n6" style="display: none;">
+        <img src="devgrup1/images/leccion2/L2_29c_2.png" alt="">
+      </div>
+
+      <div class="animated zoomIn s2_n7" style="display: none;">
+       <img src="devgrup1/images/leccion2/L2_29c_1.png" alt="">
+      </div>
+
+      <div class="animated zoomIn s2_n8" style="display: none;">
+        <img src="devgrup1/images/leccion2/L2_29c_3.png" alt="">
+      </div>
+
+      <div class="animated zoomIn s2_n9" style="display: none;">
+        <img src="devgrup1/images/leccion2/L2_29d_2.png" alt="">
+      </div>
+
+      <div class="animated zoomIn s2_n10"  style="display: none;">
+        <img src="devgrup1/images/leccion2/L2_29d_3.png" alt="">
+      </div>
+
+      <div class="animated fadeInLeft s2_n11"  style="display: none;">
+        <img src="devgrup1/images/leccion2/L3_7_2.2.png" alt="">
+      </div>
+
+      <div class="animated zoomIn s2_n12" style="display: none;">
+        <img src="devgrup1/images/leccion2/L2_29b_2.png" alt="">
+      </div>
+
+</div>
+
+  <div class="audio" style="opacity: 0.0;">
+        <video id="audio1" preload="auto" controls> 
+              <source src="devgrup1/audio/marco/1.mp3" type="video/mp4">
+        </video>
+  </div>
+
+  <!--<div class=" video espera" style="opacity: 0.0;">
+    <video id="audio1_1" preload="none" loop controls> 
+              <source src="devgrup1/video/loop.mp4" type="video/mp4">
+      </video>
+  </div>-->
+
+
+</div>
+
+
+
+<script>
+
+$('document').ready(function() {
+
+  var vid = document.getElementById("audio1");
+  //var vid2 = document.getElementById("audio1_1");
+
+  var ba = true;
+
+  var evento;
+  var eventoIn;
+	
+  
+	vid.oncanplaythrough = function() {
+	    $('.dos').show();
+	    this.play();
+      vid.play();
+
+      $("#audio1").bind("ended", function() {
+
+        ba = false;
+
+        $('.pause').fadeOut();
+        $('.stop').fadeIn();
+
+        temporizadorOut('btn_next_false', 0);
+        temporizadorIn('btn_next_true', 0);
+        temporizadorIn('mensaje', 0);
+
+      });
+
+  }
+     //$('.dos').show();
+
+    /*function loop1() {
+        $('.s2_18').css({left:550});
+        $('.s2_18').animate ({
+            left: '+=10',
+        }, 1000, 'linear', function() {
+            loop1();
+        });
+    }*/
+
+
+
+    /*loop1();*/
+
+  var time;
+
+  var v = document.getElementById("audio1");
+    v.addEventListener("timeupdate",function(ev){
+    console.log(v.currentTime * 1000);
+    time = v.currentTime * 1000;
+
+
+///////// if's de elementos /////////////////
+
+if(time >= 4500 && time < 5500){
+  temporizadorIn('s2_n1', 0);
+}
+
+if(time >= 6500 && time < 7500){
+  temporizadorIn('s2_n2', 0);
+}
+
+if(time >= 8500 && time < 9500){
+  temporizador('s2_n1', 0);
+  temporizadorIn('s2_n3', 0);
+}
+
+if(time >= 9000 && time < 9500){
+  temporizador('s2_n2', 0);
+  temporizadorIn('s2_n4', 0);
+  temporizadorIn('s2_n5', 0);
+}
+
+if(time >= 14000 && time < 15000){
+  temporizador('s2_n5', 0);
+  temporizadorIn('s2_n11',0);
+}
+
+
+
+if(time >= 21000 && time < 21500){
+   temporizador('s2_n4', 0);
+   temporizador('s2_n11',0);
+}
+
+if(time >= 22000 && time < 23000){
+  temporizador('s2_n3', 0);
+  temporizadorIn('s2_n6', 0);
+  temporizadorIn('s2_n7', 0);
+  temporizadorIn('s2_n12', 0);
+}
+
+if(time >= 37000 && time < 37500){
+  temporizador('s2_n12', 0);
+  temporizadorIn('s2_n8', 0);
+}
+
+if(time >= 40000 && time < 40500){
+  temporizador('s2_n8', 0);
+  temporizadorIn('filter', 0);
+  temporizadorIn('s2_n9', 0);
+  temporizadorIn('s2_n10', 0);
+}
+
+/*if(time >= 14000 && time < 15000){
+  temporizador('s2_n3', 0);
+  temporizadorIn('s2_n6', 0);
+  temporizadorIn('s2_n7', 0);
+}
+
+if(time >= 16000 && time < 17000){
+  temporizadorIn('s2_n8', 0);
+}
+
+if(time >= 18000 && time < 19000){
+  temporizador('s2_n8', 0);
+  temporizadorIn('filter', 0);
+  temporizadorIn('s2_n9', 0);
+  temporizadorIn('s2_n10', 0);
+}
+
+if(time >= 19000 && time < 20000){
+  temporizadorOut('btn_next_false', 0);
+  temporizadorIn('btn_next_true', 0);
+  temporizadorIn('mensaje', 0);
+}*/
+
+
+////////////////////////////////
+
+  },true);
+
+  ///////////////////////////////////////////////////
+
+  function temporizador(target, tiempo) {
+    evento = setTimeout(function() {
+      $("." + target).removeClass("zoomIn");
+      $("." + target).addClass("fadeOut");
+    }, tiempo);
+  }
+
+  function temporizadorIn(target, tiempo) {
+    eventoIn = setTimeout(function() {
+        $("." + target).fadeIn();
+    }, tiempo);            
+  }
+
+  function temporizadorOut(target, tiempo) {
+    evento = setTimeout(function() {
+      $("." + target).fadeOut();
+    }, tiempo);
+  }
+
+///////////////////////////////////////////////////////////
+
+
+    var boton = true;
+
+    $('.pause').click(function(){
+      
+      if(boton == true){
+
+        $('.pause').fadeOut();
+        $('.play').fadeIn();
+
+        if(ba == true){
+          vid.pause();
+          
+        }else{
+          vid2.pause();
+        }
+
+        boton = false;
+        console.log("boton en pause");
+      }
+
+    });
+
+    $('.play').click(function(){
+      
+      if(boton == false){
+
+        $('.play').fadeOut();
+        $('.pause').fadeIn();
+
+        boton = true;
+        console.log("boton en play");
+
+        if(ba == true){
+          vid.play();
+        }else{
+          vid2.play();
+        }
+
+      }
+
+    });
+
+    $('.reset').click(function(){
+
+        console.log("boton de reset");
+
+        $('.s2_oculto_01').hide();
+        $('.s2_oculto_02').hide();
+        $('.s2_oculto_03').hide();
+        $('.s2_oculto_04').hide();
+        $('.s2_oculto_05').hide();
+        $('.s2_oculto_06').hide();
+        $('.s2_oculto_07').hide();
+        $('.s2_oculto_08').hide();
+        $('.s2_oculto_09').hide();
+        $('.s2_oculto_10').hide();
+
+        $('.filter').hide();
+
+
+    });
+
+});
+
+</script>
+

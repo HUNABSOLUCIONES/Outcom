@@ -1,0 +1,72 @@
+<div id="slide2" class="item uno">
+
+  <div class="contenedor s2 front">
+      
+      <div class="animated bounceInDown s9_1">
+        <img src="devgrup1/images/final.png">
+      </div>
+      
+
+  </div>
+
+    <div class="video inicial fadeIn video9 s9_oculto_01">
+          <video id="audio9" preload="auto" class="video9"> 
+              <source src="devgrup1/video/herramienta1-V6.mp4" type="video/mp4">
+          </video>
+    </div>
+    <audio id="clicher" preload="none">
+      <source src="devgrup1/audio/clicher.mp3" type="audio/mp3">
+   </audio>
+
+</div>
+
+<div class="bandera animated fadeIn b2 uno disnon"><img src="devgrup1/images/bandera.png" alt=""></div>
+
+
+
+<script>
+
+$('document').ready(function() {
+  $('.b1').hide();
+
+  var vid = document.getElementById("audio9");
+  var clicher = document.getElementById("clicher");
+
+  vid.oncanplaythrough = function() {
+    //$('.audio2a').play();
+      $('.uno').show();
+      this.play();
+
+      $(".video9").bind("ended", function() {
+            clicher.play();
+            
+            $(".video9").hide();
+
+      });
+
+
+
+
+      
+  function visto_todo() {
+          if (bander==4) {
+            $('.b2').removeClass('disnon');
+          }
+       };
+
+
+
+  
+    //$('.s2_7').delay(12900).fadeOut();
+    //setTimeout('$(".s2_7 animated fadeOut").hide()',12900);
+
+    function temporizador(target, tiempo) {
+          setTimeout(function() {
+              $("." + target).addClass("animated bounceOutDown");
+          }, tiempo);
+      }
+
+    };
+
+});
+</script>
