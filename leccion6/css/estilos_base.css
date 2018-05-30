@@ -133,9 +133,15 @@ body {
 
 
 .botonera{
-
+  position: absolute;
+  top: 5%;
+  right: 85px;
+  z-index: 1000;
 }
 
+#grisControl{
+  margin-left: -5px;
+}
 
 
 
