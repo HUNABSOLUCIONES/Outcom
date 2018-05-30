@@ -1,4 +1,4 @@
-var no_slide = 1;
+var no_slide = 12;
 var primer_slide=true;
 var init_slide = 1;
 var totalSlide = 20; /* se asigan el total de slide para la operacion de la barra superior */
