@@ -19,19 +19,40 @@ body {
   position: absolute; 
 }
 
-.logo {
-  max-width: 15%;
+.gris{
+  display: block;
   position: absolute;
-  z-index: 10; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(59, 59, 59,.7);
+  z-index: 25;
+  height: 100%;
+}
+.gris img{
+  left: 45vh;
+  top: 45vh;
+  position: absolute;
+}
+
+.logo {
+  
+  position: absolute;
+  z-index: 1000; 
   top:5%;
   left:5%;
+}
+.logo img{
+  max-width: 45%;
 }
 
 #black_play{
   min-width: 8em;
   min-height: 3em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
-
 
 .book {
   position: absolute;
@@ -188,13 +209,11 @@ body {
   z-index: 20;
 }
 
-
-
 .primer {
   display: none;
   position: absolute;
-  top: 50%;
-  left: 50%; 
+  top:50vh;
+  left:50vw;
 }
 .primer a {
     font-size: 50px;

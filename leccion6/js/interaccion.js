@@ -51,12 +51,14 @@ function endSlide(){
     setTimeout(function(){
         $(".dis_next").fadeOut(); 
     },1000);
+    $(".gris").fadeIn();
     
 
 }
 
 function startSlide(){
-
+    $('.gris').fadeOut();
+    audio_positions.push(audio.currentTime);
     if ($(".dis_play").is(":visible") == true) { 
         $(".dis_play").fadeOut();
     }
