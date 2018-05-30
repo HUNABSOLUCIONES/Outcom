@@ -323,46 +323,45 @@
 /*** SLIDE 12   ***/
 
 #l6_s12_1{
-    position: absolute;
-    top: 25vh;
-    left: 20vw;
-
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 731;
 }
 
 #l6_s12_2{
     position: absolute;
-    top: 32vh;
-    left: 40vw;
-
+    top: 68;
+    left: 380;
 }
 
 #l6_s12_3{
     position: absolute;
-    top: 55vh;
-    left: 45vw;
-
+    top: 293;
+    left: 450;
 }
 
 #l6_s12_4{
-    position: absolute;
-    top: 25vh;
-    left: 20vw;
-
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 731;
 }
 
 #l6_s12_5{
     position: absolute;
-    top: 50vh;
-    left: 20vw;
-
+    top: 240;
+    left: 150;
 }
 
 #l6_s12_6{
     position: absolute;
-    top: 50vh;
-    left: 40vw;
-
+    top: 220;
+    left: 380;
 }
+
+
+/*** SLIDE 13   ***/
 
 #l6_s13_1{
     position: absolute;
