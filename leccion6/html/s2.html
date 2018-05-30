@@ -1,6 +1,6 @@
 <div id="slide" class="item">
         
-    <div id="elemento_1" class="elemento elemento_oculto">
+    <div id="elemento_1" class="next elemento elemento_oculto">
         <img src="images/L1_P1_6a_1.png" alt="">
     </div>
    
@@ -10,25 +10,24 @@
 <script>
 
     $('document').ready(function() {
-        var vid = document.getElementById("video1");
-        var vid2 = document.getElementById("loop");
-            vid.oncanplaythrough = function() {
-                $('#slide').show();
-                //this.play();
-            $('#loop').hide();
-
-            $("#video1").on("ended", function() {
-                $('#video1').fadeOut();
-                $('#loop').fadeIn();      
-                //vid2.play();
-            });
-        };
-
-        vid.addEventListener("timeupdate",function(){
-            if(vid.currentTime>2&& vid.currentTime<3){
-            elementFadeIn("elemento_1");
+        
+        var audio = document.getElementById("audio");
+        $("#audio").trigger('load');
+        $("#audio").on('canplaythrough',function(){
+            audioPlay();
+        });
+        
+        audio.addEventListener("timeupdate",function(){
+            if(audio.currentTime>2&& audio.currentTime<3){
+                elementFadeIn("elemento_1");
             }
 
+
+            if(audio.currentTime>5&& audio.currentTime<5.7){
+                audio.removeEventListener("timeupdate",function(){});
+                audioPause();
+            }
+            
 
         });
     });

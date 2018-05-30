@@ -4,6 +4,8 @@ var init_slide = 1;
 var totalSlide = 11; /* se asigan el total de slide para la operacion de la barra superior */
 var porcentaje = (no_slide * 100)/totalSlide; /* calculo de la barra de porcentaje :  no_slide * 100 / totalslides */
 
+var audio = new Audio('srcfile.wav');
+
 function obtenerPorcentaje(){   
     porcentaje = (no_slide * 100)/totalSlide;
 }
@@ -32,11 +34,10 @@ function getSlide(){
 }
 
 
-
 $('body').on('click', '.next', function(event) {
-    if(primer_slide){primer_slide=false;}else{no_slide = no_slide+1;}
+    //if(primer_slide){primer_slide=false;}else{no_slide = no_slide+1;}
+    no_slide = no_slide+1;
     if(no_slide===2)$(".botonera").removeClass('ocultar');
-    //no_slide = no_slide+1;
     if(no_slide>1)$(".wrapper").fadeOut(200);
     getSlide(); 
     setTimeout(function(){
@@ -149,6 +150,8 @@ $('#black_play').on('click', function(){ $('.negro').hide();});
 $('document').ready(function() {
     book();
     $.ajaxSetup({ cache:false });
+
+    
 
 
     setTimeout(function() {

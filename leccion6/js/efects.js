@@ -28,3 +28,15 @@ function elementFadeInRight(target){
     $("#"+target).addClass('animated fadeInRight');
     $("#"+target).show();
 }
+
+function audioPlay() {
+    $("#audio").trigger('play');
+    console.log("entraplay");
+
+}
+
+function audioPause() {
+    console.log("entrapause");
+    $("#audio").trigger('pause');
+    
+}
