@@ -301,25 +301,26 @@
 
 /*** SLIDE 11   ***/
 #l6_s11_1{
-    position: absolute;
-    top: 25vh;
-    left: 20vw;
-
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 731;
 }
 
 #l6_s11_2{
     position: absolute;
-    top: 48vh;
-    left: 20vw;
-
+    top: 240;
+    left: 150;
 }
 
 #l6_s11_3{
     position: absolute;
-    top: 30vh;
-    left: 20vw;
-
+    top: 75;
+    left: 150;
 }
+
+
+/*** SLIDE 12   ***/
 
 #l6_s12_1{
     position: absolute;
