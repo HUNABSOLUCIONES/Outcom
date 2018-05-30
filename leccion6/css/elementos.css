@@ -392,22 +392,20 @@
 
 /*** SLIDE 14   ***/
 #l6_s14_1{
-    position: absolute;
-    top: 25vh;
-    left: 20vw;
-
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 731;
 }
 
 #l6_s14_2{
     position: absolute;
-    top: 33vh;
-    left: 40vw;
-
+    top: 78;
+    left: 382;
 }
 
 #l6_s14_3{
     position: absolute;
-    top: 53vh;
-    left:45vw;
-
+    top: 280;
+    left: 450;
 }

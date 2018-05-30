@@ -1,4 +1,4 @@
-var no_slide = 12;
+var no_slide = 1;
 var primer_slide=true;
 var init_slide = 1;
 var totalSlide = 14; /* se asigan el total de slide para la operacion de la barra superior */
@@ -90,10 +90,10 @@ function startSlide(){
 }
 
 $('body').on('click', '.next', function(event) {
-    //if(primer_slide){primer_slide=false;}else{no_slide = no_slide+1;}
-    no_slide = no_slide+1;
+    if(primer_slide){primer_slide=false;}else{no_slide = no_slide+1;}
+    //no_slide = no_slide+1;
     if(no_slide===2)$(".botonera").removeClass('ocultar');
-    //if(no_slide>1)$(".wrapper").fadeOut(200);
+    if(no_slide>1)$(".wrapper").fadeOut(200);
     getSlide(); 
     setTimeout(function(){
         $('.wrapper').show();
