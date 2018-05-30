@@ -166,26 +166,26 @@
 /*** SLIDE 5   ***/
 
 #l6_s5_1{
-    position: absolute;
-    top: 25vh;
-    left: 20vw;
-
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 731;
 }
 
 #l6_s5_2{
     position: absolute;
-    top: 39.5vh;
-    left: 23vw;
-
+    top: 135;
+    left: 170;
 }
 
 #l6_s5_3{
     position: absolute;
-    top: 35vh;
-    left: 40vw;
-
+    top: 120;
+    left: 350;
 }
 
+
+/*** SLIDE 6   ***/
 
 #l6_s6_1{
     position: absolute;
