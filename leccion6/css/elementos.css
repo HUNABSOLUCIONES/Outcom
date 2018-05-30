@@ -7,6 +7,8 @@
     z-index: 200;
 }
 
+/*** SLIDE 1   ***/
+
 #l6_s1_1{
     position: absolute;
     left: 250;
@@ -21,13 +23,13 @@
 
 #l6_s1_3{
     position: absolute;
-    left: 200;
+    left: 150;
     top: 100;
 }
 
 #l6_s1_4{
     position: absolute;
-    left: 200;
+    left: 150;
     top: 170;
 }
 
@@ -50,31 +52,36 @@
 }
 
 
-
+/*** SLIDE 2   ***/
 
 
 #l6_s2_1{
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 731;
 
 }
 
 #l6_s2_2{
     position: absolute;
-    top: 33vh;
-    left: 20.5vw;
+    top: 80;
+    left: 150;
 
 }
 
 
+/*** SLIDE 3   ***/
 
 
 #l6_s3_1{
-    position: absolute;
-    top: 0;
-    left: 0;
-
+    position: relative;
+    top: 50;
+    /* left: 0; */
+    /* max-width: 50px; */
+    margin-left: auto;
+    margin-right: auto;
+    width: 731;
 }
 
 #l6_s3_2{

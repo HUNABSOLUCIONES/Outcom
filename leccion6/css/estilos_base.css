@@ -127,13 +127,14 @@ body {
 }
 
 .wrapper {
-  min-width: 1024px;
+  /* min-width: 1024px; */
+  width: 1024;
   z-index: 1;
-  width: 90%;
-  top:150px;
-  left: 50px;
-  position:absolute;
- 
+  top: 150;
+  /* left: 50; */
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -168,11 +169,13 @@ body {
   top:5;
 }
 
-#slide{
-  width: 1024px;
-  height: 500px;
+#silde{
+  display: block;
+  width: 1024;
+  height: 500;
+  margin-left: auto;
+  margin-right: auto;
 }
-
 
 .play{
   position: absolute;
