@@ -35,6 +35,7 @@ function getSlide(){
 
 $('body').on('click', '.next', function(event) {
     if(primer_slide){primer_slide=false;}else{no_slide = no_slide+1;}
+    if(no_slide===2)$(".botonera").removeClass('ocultar');
     //no_slide = no_slide+1;
     if(no_slide>1)$(".wrapper").fadeOut(200);
     getSlide(); 
