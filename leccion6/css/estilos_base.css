@@ -24,15 +24,11 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  padding-top: 45vh;
   width: 100%;
   background-color: rgba(59, 59, 59,.7);
   z-index: 25;
   height: 100%;
-}
-.gris img{
-  left: 45vh;
-  top: 45vh;
-  position: absolute;
 }
 
 .logo {
@@ -80,8 +76,8 @@ body {
 
 .derecha{
   position: absolute;
-  top: 2.5vh;
-  left: 48vw;
+  top: -100;
+  right: 35;
 }
 
 .girar1 {
@@ -134,9 +130,10 @@ body {
   min-width: 1024px;
   z-index: 1;
   width: 90%;
-  top:5%;
-  left: 5%;
+  top:150px;
+  left: 50px;
   position:absolute;
+ 
 }
 
 
@@ -169,6 +166,11 @@ body {
   position: absolute;
   right: 29%;
   top:5;
+}
+
+#slide{
+  width: 1024px;
+  height: 500px;
 }
 
 

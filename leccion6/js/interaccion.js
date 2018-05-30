@@ -112,6 +112,7 @@ $('body').on('click', '.prev', function(event) {
     
     if(no_slide==1){
         $(".botonera").addClass('ocultar');
+        $(".gris").addClass('ocultar');
         $("#audio").prop("currentTime",0);
         audio_positions = new Array();
     }
