@@ -1,0 +1,21 @@
+<div class="contenedor s2_oculto_01 s2_1">
+    <div class=""><img src="devgrup1/images/leccion2/L2_29a_1.png" alt=""></div>
+</div>
+
+<div class="contenedor s2_oculto_02 s2_2" style="display: none;">
+    <div class=""><img src="devgrup1/images/leccion2/L2_29a_2.png" alt=""></div>
+</div>
+
+<script>
+
+	temporizadorIn('s2_oculto_02', 1000);
+
+	function temporizadorIn(target, tiempo) {
+         setTimeout(function() {
+              //$("." + target).removeClass("animated fadeOut");
+              $("." + target).addClass("animated fadeIn");
+              $("." + target).show();
+          }, tiempo);
+    }
+
+</script>

@@ -1,0 +1,163 @@
+<div id="slide10" class="item diez">
+
+   
+<div class="animated fadeIn s1_sp"><img src="devgrup1/images/s9_porta2.png" alt=""></div>
+
+ <div class="contenedor s10">
+
+    <div class=" contenedor pass">
+         <div class="animated fadeInRight s10_n2"><img src="devgrup1/images/4a_empl_04.png" alt=""></div>
+         <div class="animated zoomIn s10_n5"><img src="devgrup1/images/leccion2/L1_J2_3a_3.png" alt=""></div>
+         <div class="animated fadeIn s10_n6"><img src="devgrup1/images/4a_feli_04.png" alt=""></div>
+
+         <div class="animated fadeIn s10_n1"><img src="devgrup1/images/s9_p1_anun_01.png" alt=""></div>
+         <div class="animated fadeIn s10_n3"><img src="devgrup1/images/s9_p1_estre_01.png" alt=""></div>
+         <div class="animated fadeIn s10_n4"><img src="devgrup1/images/s9_p1_flecha_01.png" alt=""></div>
+         
+
+         <div class="animated zoomIn s10_n10 next"><img src="devgrup1/images/4a_cont_04.png" alt=""></div>
+
+         <div class="animated fadeInLeft s10_nf1"><img src="devgrup1/images/s_clik.png" alt=""></div>
+
+    </div>
+
+    <div class=" contenedor nopass">
+
+         <div class="animated fadeIn s10_x1"><img src="devgrup1/images/s9_p1_anun_01.png" alt=""></div>
+         <div class="animated fadeIn s10_x3"><img src="devgrup1/images/s9_p1_estre_01.png" alt=""></div>
+         <div class="animated fadeIn s10_x4"><img src="devgrup1/images/s9_p1_flecha_01.png" alt=""></div>
+
+         <div class="animated fadeInRight s10_n7"><img src="devgrup1/images/leccion2/L1_J2_4a_1.png" alt=""></div>
+         <div class="animated zoomIn s10_n8"><img src="devgrup1/images/leccion2/L1_J2_4a_4.png" alt=""></div>
+         <div class="animated fadeIn s10_n9"><img src="devgrup1/images/5a_sorry_01.png" alt=""></div>
+         
+
+         <div class="animated zoomIn s10_n10 submenu repetir" data-sub="2"><img src="devgrup1/images/5a_repasar_02.png" alt=""></div>
+         <div class="animated zoomIn s10_n11 submenu repetir" data-sub="8"><img src="devgrup1/images/5a_volver_01.png" alt=""></div>
+         <div class="animated zoomIn s10_n12 next out" ><img src="devgrup1/images/4a_cont_04.png" alt=""></div>
+         <div class="animated fadeInLeft s10_nf2"><img src="devgrup1/images/s_clik.png" alt=""></div>
+         <div class="animated fadeInLeft s10_nf3"><img src="devgrup1/images/s_clik.png" alt=""></div>
+         <div class="animated fadeInLeft s10_nf4 out"><img src="devgrup1/images/s_clik.png" alt=""></div>
+    </div>
+
+
+         
+
+     
+  </div>
+
+
+    
+<audio id="solo" preload="auto">
+  <source src="devgrup1/audio/solo.mp3" type="audio/mp3">
+</audio>
+
+
+</div>
+
+
+<script>
+
+$('document').ready(function() {
+      $('.pass').hide();
+      $('.nopass').hide();
+
+
+      if(bandera){
+          $('.s10_n12, .s10_nf4').removeClass("out");
+          $('.s10_n12, .s10_nf4').addClass("in_blank");
+          console.log("bandera es igual true");
+       }else{
+          console.log("bandera es igual false");
+       }
+
+
+       $('.repetir').click(function(){
+          bandera = true;
+          console.log("valor de bandera despues del click en atras: " + bandera);
+        });
+  
+
+function temporizador(target, tiempo) {
+          setTimeout(function() {
+              $("." + target).addClass("animated fadeOut");
+
+          }, tiempo);
+      }
+
+      function temporizadorIn(target, tiempo) {
+          setTimeout(function() {
+
+              $("." + target).show();            
+              //$("." + target).addClass("animated fadeOut");
+
+
+          }, tiempo);
+      }
+
+if (checkpunt==8) {
+      $('.pass').show();
+}else{
+      $('.nopass').show();
+}
+
+
+    function loop() {
+        $('.s10_nf1').css({right:195});
+        $('.s10_nf1').animate ({
+            right: '-=10',
+        }, 1000, 'linear', function() {
+            loop();
+        });
+    }
+    function loopf2() {
+        $('.s10_nf2').css({right:195});
+        $('.s10_nf2').animate ({
+            right: '-=10',
+        }, 1000, 'linear', function() {
+            loopf2();
+        });
+    }
+
+function loopf3() {
+        $('.s10_nf3').css({right:195});
+        $('.s10_nf3').animate ({
+            right: '-=10',
+        }, 1000, 'linear', function() {
+            loopf3();
+        });
+    }
+
+    function loopf4() {
+        $('.s10_nf4').css({right:195});
+        $('.s10_nf4').animate ({
+            right: '-=10',
+        }, 1000, 'linear', function() {
+            loopf4();
+        });
+    }
+
+
+
+    loop();
+    loopf3();
+    loopf2();
+    loopf4();
+
+
+  var vid = document.getElementById("solo");
+
+  vid.oncanplaythrough = function() {
+      $('.diez').show();
+      this.play();
+
+
+
+    temporizador('s10_oculto_01', 4000);
+
+
+
+    };
+
+});
+</script>

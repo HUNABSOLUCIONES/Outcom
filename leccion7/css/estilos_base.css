@@ -1,0 +1,281 @@
+/***** BASE STYLES USED AMONG SLIDES ********/
+body {
+  margin: 0;
+  padding: 0;
+  background: url(../images/generales/L2_Portada_1.png) #000;
+  background-size: cover;
+  background-repeat: no-repeat; 
+  min-width: 1024px;
+  min-height: 500px;
+  overflow: hidden;
+}
+
+.negro {
+  background-color: #000;
+  z-index: 9999;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute; 
+}
+
+.logo {
+  max-width: 15%;
+  position: absolute;
+  z-index: 10; 
+  top:5%;
+  left:5%;
+}
+
+#black_play{
+  min-width: 8em;
+  min-height: 3em;
+}
+
+
+.book {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+  width: 100%; 
+  z-index: 9999;
+}
+
+.book .marcador {
+  width: 0%;
+  padding: 5px;
+  background: #144982;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out; 
+}
+
+.ocultar{
+  display: none;
+}
+
+.derecha{
+  position: absolute;
+  top: 2.5vh;
+  left: 48vw;
+}
+
+.girar1 {
+  -webkit-animation: rotar1 2s infinite linear;
+  animation: rotar1 2s infinite linear; 
+}
+.girar2 {
+  -webkit-animation: rotar2 2s infinite linear;
+  animation: rotar2 2s infinite linear; 
+}
+
+@-webkit-keyframes rotar1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg); } 
+}
+@keyframes rotar1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg); } 
+}
+@-webkit-keyframes rotar2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(-359deg);
+    transform: rotate(-359deg); } 
+}
+@keyframes rotar2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(-359deg);
+    transform: rotate(-359deg); } 
+}
+
+.video{
+  max-width: 88vw;
+}
+
+.wrapper {
+  min-width: 1024px;
+  z-index: 1;
+  width: 90%;
+  top:5%;
+  left: 5%;
+  position:absolute;
+}
+
+
+.top{
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  z-index: 5;
+}
+
+.top img {
+  width: 100%;
+  height: 10px;
+}
+
+
+.botonera{
+  position: absolute;
+  top: 5%;
+  right: 85px;
+  z-index: 1000;
+}
+
+#grisControl{
+  margin-left: -5px;
+}
+
+
+.play{
+  
+}
+
+
+
+.primer {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -25px 0 0 -25px; }
+  .primer a {
+    font-size: 50px;
+    color: #fff; }
+
+.precarga {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  margin: -50px 0 0 -50px;
+  color: #fff; }
+  .precarga i {
+    position: absolute; }
+  .precarga .engranes1 {
+    top: 0;
+    left: 36px;
+    font-size: 50px; }
+  .precarga .engranes2 {
+    top: 30px;
+    left: 12px;
+    font-size: 32px; }
+  .precarga .engranes3 {
+    top: 34px;
+    right: 5px;
+    font-size: 26px; }
+
+
+
+.carlos {
+  top: 20px;
+  right: 20px;
+  width: 150px;
+  z-index: 999; }
+
+.contenedor {
+  width: 1024px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  margin: -250px 0 0 -512px; 
+  z-index: 0;
+}
+
+
+.content_control {
+  top: 100px;
+  right: 0;
+  position: absolute;
+  width: 150px; }
+
+
+.uno, .dos {
+  display: none; }
+
+.forzar {
+  display: none !important; }
+
+.avatar {
+  position: absolute;
+  top: 100px;
+  right: 780px;
+  z-index: 10; }
+
+.menu {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 100%;
+  height: 48px; }
+
+.ico1 {
+  position: absolute;
+  bottom: 0;
+  right: 260px; }
+
+.ico2 {
+  position: absolute;
+  bottom: 0;
+  right: 133px; }
+
+.ico3 {
+  position: absolute;
+  bottom: 0;
+  right: 0; }
+
+.right {
+  left: 30px; }
+
+.refresh {
+  left: 60px; }
+
+.fondo-logo {
+  top: 10px;
+  width: 100%; }
+  .fondo-logo img {
+    width: 100%;
+    height: 120px; }
+
+.titulo {
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  top: 6px;
+  left: 270px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold; }
+
+.menu_herramientas {
+  width: 147px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  right: 62px;
+  top: 10px; }
+  .menu_herramientas .herramienta {
+    padding: 0 10px 0 10px; }
+
+

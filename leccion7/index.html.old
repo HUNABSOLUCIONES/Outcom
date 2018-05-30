@@ -1,0 +1,84 @@
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>MODELO</title>
+	<script src="js/modernizr.js"></script>
+    <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="js/efects.js"></script>
+    <link rel="stylesheet" href="css/estilos_base.css">
+    <link rel="stylesheet" href="css/elementos.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/full-slider.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/remodal.css">
+    <link rel="stylesheet" href="css/remodal-default-theme.css">
+</head>
+
+<body>
+
+    <div class="top">
+        <img src="images/generales/Consolas_Lineas.png" alt="">
+    </div>
+
+        <div class="animated fadeInLeft"><img class="logo" src="images/generales/por_logos.png" alt=""></div>
+
+        <div class="botonera animated fadeInRight ocultar">
+                <img src="images/L6_0_Titulo.png" alt="">
+                <img src="images/generales/L2_Header_Fondo.png">
+
+                <img class="control_1 prev" src="images/generales/L2_Header_Boton1.png" alt="">
+                <img class="control_2 play" src="images/generales/L2_Header_Boton2play.png" alt="" style="display: none;">
+                <img class="control_3 reset" src="images/generales/L2_Header_Boton3.png" alt="">
+                <img class="control_4" src="images/generales/L2_Header_Boton4_cancel.png" alt="">
+                <img class="control_5 next" src="images/generales/L2_Header_Boton4.png" alt="" >
+        </div>
+
+
+    
+    
+
+    <!--BLACK SCREEN SECTION -->
+        <div class="negro">
+            <!--LOADING ICONS --> 
+            <div class="precarga"> 
+                <i class="fa fa-cog girar1 engranes1"></i> 
+                <i class="fa fa-cog girar2 engranes2"></i> 
+                <i class="fa fa-cog girar2 engranes3"></i> 
+            </div> 
+            <!--END LOADING ICONS -->
+
+            <!--PLAY ICON --> 
+            <div id="cont_s01" class="cont_s01 primer"> 
+                <a id="black_play" class="next"> 
+                    <span class="icon-next"><i class="fa fa-play"></i></span> 
+                </a> 
+            </div>
+            <!--END PLAY ICON -->
+
+        </div>
+    <!--END BLACK SCREEN SECTION -->
+
+    <!--CONTENT WRAPPER  -->
+        <div class="wrapper"></div>
+    <!--END CONTENT WRAPPER -->
+
+    <div class="book">
+        <div class="marcador"></div>
+    </div>
+
+    <audio id="audio">
+        <source src="audio/l6.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <script type="text/javascript" src="js/interaccion.js"> </script>
+    
+
+</body>
+
+</html>

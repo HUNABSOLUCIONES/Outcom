@@ -1,0 +1,116 @@
+<div id="slide" class="item">
+	
+  
+  <div id="l7_s1_1" class="elemento elemento_oculto">
+    <img src="images/L1_P1_7a_1.png" alt="">
+  </div>
+
+  <div id="l7_s1_2" class="elemento elemento_oculto">
+    <img src="images/L1_P1_7a_2.png" alt="">
+  </div>
+
+  <div id="l7_s1_3" class="elemento elemento_oculto">
+    <img src="images/L1_P1_7b_1.png" alt="">
+  </div>
+
+  <div id="l7_s1_4" class="elemento elemento_oculto">
+    <img src="images/L1_P1_7b_2.png" alt="">
+  </div>
+
+  <div id="l7_s1_5" class="elemento elemento_oculto">
+    <img src="images/L1_P1_7c_1.png" alt="">
+  </div>
+
+  <div id="l7_s1_6" class="elemento elemento_oculto">
+    <img src="images/L1_P1_7d_1.png" alt="">
+  </div>
+  
+  <div id="l7_s1_7" class="elemento elemento_oculto">
+    <img src="images/click_aqui.png" alt="">
+  </div>
+
+  <div id="l7_s1_8" class="elemento next boton elemento_oculto">
+    <img src="images/L2_Portada_4.png" alt="">
+  </div>
+   
+	 
+  <div class=" derecha">
+		    <video class="video" id="video1" preload="auto" > 
+	            <source src="video/1.mp4" type="video/mp4">
+	      </video>
+  </div>
+
+  <div class=" derecha">
+		<video class="video" id="loop" preload="none" loop> 
+	            <source src="video/loop.mp4" type="video/mp4">
+	    </video>
+  </div>
+
+</div>
+
+
+<script>
+
+$('document').ready(function() {
+  var vid = document.getElementById("video1");
+  var vid2 = document.getElementById("loop");
+	vid.oncanplaythrough = function() {
+	    this.play();
+      $('#loop').hide();
+      $("#video1").on("ended", function() {
+          $('#video1').fadeOut();
+          $('#loop').fadeIn();      
+          vid2.play();
+      });
+  };
+
+  vid.addEventListener("timeupdate",function(){
+    if(vid.currentTime>4&& vid.currentTime<5){
+      elementFadeIn("l7_s1_1");
+    }
+
+    if(vid.currentTime>7&& vid.currentTime<8){
+      elementFlipIn("l7_s1_2");
+    }
+
+    if(vid.currentTime>8&& vid.currentTime<12){
+      elementFadeOut("l7_s1_1");
+      elementFadeOut("l7_s1_2");
+    }
+
+    if(vid.currentTime>9&& vid.currentTime<12){
+      elementFlipIn("l7_s1_3");
+      elementFlipIn("l7_s1_4");
+    }
+    
+    if(vid.currentTime>13&& vid.currentTime<14){
+      elementFadeOut("l7_s1_3");
+      elementFadeOut("l7_s1_4");
+    }
+
+    if(vid.currentTime>14&& vid.currentTime<16){
+      elementFadeIn("l7_s1_5");
+    }
+
+    if(vid.currentTime>21&& vid.currentTime<23){
+      elementFadeOut("l7_s1_5");
+    }
+    
+    if(vid.currentTime>24&& vid.currentTime<26){
+      elementFadeIn("l7_s1_6");
+    }
+
+    
+    if(vid.currentTime>29&& vid.currentTime<31){
+      elementSlideInLoop("l7_s1_7");
+      elementBounceIn("l7_s1_8");
+    }
+    
+
+
+
+  });
+
+
+});
+</script>

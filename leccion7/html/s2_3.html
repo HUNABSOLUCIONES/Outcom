@@ -1,0 +1,26 @@
+<div class="contenedor s2_oculto_03 s2_1">
+    <div class=""><img src="devgrup1/images/leccion2/L2_29b_1.png" alt=""></div>
+</div>
+
+<div class="contenedor s2_oculto_04 s2_3" style="display: none;">
+   	<div class=""><img src="devgrup1/images/leccion2/L2_29b_2.png" alt=""></div>
+</div>
+
+<div class="contenedor s2_oculto_05 s2_4" style="display: none;">
+    <div class=""><img src="devgrup1/images/leccion2/L2_29b_3.png" alt=""></div>
+</div>
+
+<script>
+
+	temporizadorIn('s2_oculto_04', 2000);
+	temporizadorIn('s2_oculto_05', 2000);
+
+	function temporizadorIn(target, tiempo) {
+         setTimeout(function() {
+              //$("." + target).removeClass("animated fadeOut");
+              $("." + target).addClass("animated fadeIn");
+              $("." + target).show();
+          }, tiempo);
+    }
+
+</script>
