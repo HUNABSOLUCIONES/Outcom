@@ -1,0 +1,63 @@
+<div id="slide">
+        
+        <div id="l6_s12_1" class="elemento elemento_oculto   ">
+            <img src="images/L6_11_1.png" alt="">
+        </div>
+        <div id="l6_s12_2" class="elemento elemento_oculto   ">
+            <img src="images/L6_11_2.png" alt="">
+        </div>
+
+        <div id="l6_s12_3" class="elemento elemento_oculto   ">
+            <img src="images/L6_11_3.png" alt="">
+        </div>
+
+        <div id="l6_s12_4" class="elemento elemento_oculto   ">
+            <img src="images/L6_10_1.png" alt="">
+        </div>
+        <div id="l6_s12_5" class="elemento elemento_oculto   ">
+            <img src="images/L6_10_4.png" alt="">
+        </div>
+
+        <div id="l6_s12_6" class="elemento elemento_oculto   ">
+            <img src="images/L6_10_5.png" alt="">
+        </div>
+
+</div>
+    
+    
+    <script>
+    
+        $('document').ready(function() {
+            
+            startSlide();
+            $("#audio").bind("timeupdate",function(){
+                if(audio.currentTime>100){
+                    elementFadeIn("l6_s12_1");
+                }
+
+                if(audio.currentTime>102){
+                    elementBounceIn("l6_s12_2");
+                    elementBounceIn("l6_s12_3");
+                }
+
+                if(audio.currentTime>109){
+                    elementFadeOut("l6_s12_1");
+                    elementFadeOut("l6_s12_2");
+                    elementFadeOut("l6_s12_3");
+                    
+                }
+
+                if(audio.currentTime>111){
+                    elementFadeIn("l6_s12_4");
+                    elementBounceIn("l6_s12_5");
+                    elementBounceIn("l6_s12_6");      
+                }
+
+                if(audio.currentTime>117){
+                    endSlide();
+                }
+    
+            });
+        });
+    </script>
+    
