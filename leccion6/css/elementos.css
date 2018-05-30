@@ -212,25 +212,27 @@
 /*** SLIDE 7   ***/
 
 #l6_s7_1{
-    position: absolute;
-    top: 25vh;
-    left: 20vw;
-
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 731;
 }
 
 #l6_s7_2{
     position: absolute;
-    top: 40.5vh;
-    left: 23vw;
-
+    top: 153;
+    left: 185;
 }
 
 #l6_s7_3{
     position: absolute;
-    top: 38vh;
-    left: 42vw;
+    top: 120;
+    left: 400;
 
 }
+
+
+/*** SLIDE 8   ***/
 
 #l6_s8_1{
     position: absolute;
