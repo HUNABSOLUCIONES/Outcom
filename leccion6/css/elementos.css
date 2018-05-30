@@ -254,28 +254,29 @@
 }
 
 
-/*** SLIDE 8   ***/
+/*** SLIDE 9   ***/
 
 #l6_s9_1{
-    position: absolute;
-    top: 25vh;
-    left: 20vw;
-
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 731;
 }
 
 #l6_s9_2{
     position: absolute;
-    top: 44.5vh;
-    left: 26vw;
-
+    top: 190;
+    left: 215;
 }
 
 #l6_s9_3{
     position: absolute;
-    top: 43vh;
-    left: 37vw;
-
+    top: 175;
+    left: 324;
 }
+
+
+/*** SLIDE 9   ***/
 
 #l6_s10_1{
     position: absolute;
