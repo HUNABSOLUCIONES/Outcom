@@ -80,13 +80,79 @@
 #l6_s3_2{
     position: absolute;
     top: 33vh;
-    left: 25vw;
+    left: 34vw;
 
 }
 
 #l6_s3_3{
     position: absolute;
-    top: 33vh;
-    left: 30vw;
+    top: 32vh;
+    left: 40vw;
+
+}
+
+#l6_s3_4{
+    position: absolute;
+    top: 25vh;
+    left: 20vw;
+
+}
+
+
+#l6_s3_5{
+    position: absolute;
+    top: 39vh;
+    left: 48vw;
+
+}
+
+#l6_s3_6{
+    position: absolute;
+    top: 38vh;
+    left: 53vw;
+
+}
+
+#l6_s4_1{
+    position: absolute;
+    top: 25vh;
+    left: 20vw;
+
+}
+
+#l6_s4_2{
+    position: absolute;
+    top: 36vh;
+    left: 21vw;
+
+}
+
+#l6_s4_3{
+    position: absolute;
+    top: 35vh;
+    left: 26vw;
+
+}
+
+
+#l6_s4_4{
+    position: absolute;
+    top: 25vh;
+    left: 20vw;
+
+}
+
+
+#l6_s4_5{
+    position: absolute;
+    top: 39.3vh;
+    left: 22vw;
+
+}
+
+#l6_s4_6{
+    position: absolute;
+    top: 37.3vh;
+    left: 35vw;
 
 }

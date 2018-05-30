@@ -1,15 +1,27 @@
 <div id="slide">
         
-        <div id="l6_s3_1" class="elemento  ">
+        <div id="l6_s3_1" class="elemento elemento_oculto ">
             <img src="images/L6_1_1.png" alt="">
         </div>
 
-        <div id="l6_s3_2" class="elemento  ">
+        <div id="l6_s3_2" class="elemento elemento_oculto ">
             <img src="images/L6_1_3.png" alt="">
         </div>
 
-        <div id="l6_s3_3" class="elemento  ">
+        <div id="l6_s3_3" class="elemento elemento_oculto ">
             <img src="images/L6_1_4.png" alt="">
+        </div>
+
+        <div id="l6_s3_4" class="elemento elemento_oculto  ">
+            <img src="images/L6_2_1.png" alt="">
+        </div>
+
+        <div id="l6_s3_5" class="elemento elemento_oculto  ">
+            <img src="images/L6_2_2.png" alt="">
+        </div>
+
+        <div id="l6_s3_6" class="elemento elemento_oculto  ">
+            <img src="images/L6_2_3.png" alt="">
         </div>
     
         
@@ -25,19 +37,32 @@
             
             
             $("#audio").bind("timeupdate",function(){
-                if(audio.currentTime>12&& audio.currentTime<13){
+                if(audio.currentTime>12){
                     elementFadeIn("l6_s3_1");
                 }
-    
-    
-                if(audio.currentTime>6&& audio.currentTime<7){
-                    elementBounceIn("l6_s2_2");         
+
+                if(audio.currentTime>13){
+                    elementBounceIn("l6_s3_2");
+                    elementBounceIn("l6_s3_3");
+                    
                 }
-    
-                if(audio.currentTime>11&& audio.currentTime<12){
-                    endSlide();      
+
+                if(audio.currentTime>15){
+                    elementFadeOut("l6_s3_1");
+                    elementFadeOut("l6_s3_2");
+                    elementFadeOut("l6_s3_3");
+
+                    elementFadeIn("l6_s3_4");
+                    elementBounceIn("l6_s3_5");
+                    elementBounceIn("l6_s3_6");
+                    
                 }
-    
+
+                if(audio.currentTime>17.7){
+                    pauseAudio();
+                    setTimeout(endSlide(),3500);     
+                }
+
                 
     
             });
