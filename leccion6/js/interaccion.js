@@ -208,5 +208,5 @@ $('document').ready(function() {
         $(".primer").toggle("slow");
         $(".precarga").toggle("fast");
         $(".top").show();
-    }, 1500);
+    }, 500);
 });
