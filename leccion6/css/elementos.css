@@ -122,48 +122,48 @@
 /*** SLIDE 4   ***/
 
 #l6_s4_1{
-    position: absolute;
-    top: 25vh;
-    left: 20vw;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 731;
 
 }
 
 #l6_s4_2{
     position: absolute;
-    top: 36vh;
-    left: 21vw;
-
+    top: 110;
+    left: 160;
 }
 
 #l6_s4_3{
     position: absolute;
-    top: 35vh;
-    left: 26vw;
-
+    top: 100;
+    left: 220;
 }
-
 
 #l6_s4_4{
-    position: absolute;
-    top: 25vh;
-    left: 20vw;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 731;
 
 }
-
 
 #l6_s4_5{
     position: absolute;
-    top: 39.3vh;
-    left: 22vw;
+    top: 138;
+    left: 175;
 
 }
 
 #l6_s4_6{
     position: absolute;
-    top: 37.3vh;
-    left: 35vw;
+    top: 122;
+    left: 260;
 
 }
+
+/*** SLIDE 5   ***/
 
 #l6_s5_1{
     position: absolute;
