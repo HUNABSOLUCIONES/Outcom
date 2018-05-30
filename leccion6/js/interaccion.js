@@ -41,6 +41,43 @@ function pauseAudio(){
     $("#audio").trigger('pause');
 }
 
+
+function endSlide(){
+    pauseAudio();
+    $( "#audio" ).unbind();
+    $('.pause').fadeOut();
+    $('.dis_play').fadeIn();
+    $(".next").fadeIn();
+    setTimeout(function(){
+        $(".dis_next").fadeOut(); 
+    },1000);
+    
+
+}
+
+function startSlide(){
+
+    if ($(".dis_play").is(":visible") == true) { 
+        $(".dis_play").fadeOut();
+    }
+    if ($(".play").is(":visible") == true) { 
+        $(".play").fadeOut();
+    }
+
+    if ($(".pause").is(":visible") != true) { 
+        $(".pause").fadeIn();
+    }
+
+    if ($(".next").is(":visible") == true) { 
+        $(".next").fadeOut();
+    }
+
+    if ($(".dis_next").is(":visible") != true) { 
+        $(".dis_next").fadeIn();
+    }
+    playAudio();
+}
+
 $('body').on('click', '.next', function(event) {
     //if(primer_slide){primer_slide=false;}else{no_slide = no_slide+1;}
     no_slide = no_slide+1;
@@ -65,6 +102,7 @@ $('body').on('click', '.prev', function(event) {
     if(no_slide==1){
         $(".botonera").addClass('ocultar');
         $("#audio").prop("currentTime",0);
+        audio_positions = new Array();
     }
 
     $(".wrapper").fadeOut(200);
@@ -99,12 +137,17 @@ $('body').on('click', '.reset', function(event) {
 $('body').on('click', '.play', function(event) {
 
     playAudio();
+    $('.play').fadeOut();
+    $('.pause').fadeIn();
 
 });
 
 $('body').on('click', '.pause', function(event) {
 
     pauseAudio();
+
+    $('.pause').fadeOut();
+    $('.play').fadeIn();
 
 });
 

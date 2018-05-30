@@ -1,6 +1,6 @@
 <div id="slide" class="item">
         
-    <div id="elemento_1" class="next elemento elemento_oculto">
+    <div id="elemento_1" class="elemento elemento_oculto">
         <img src="images/L1_P1_6a_1.png" alt="">
     </div>
    
@@ -11,7 +11,7 @@
 
     $('document').ready(function() {
 
-        
+        startSlide();
         
         $("#audio").trigger('load');
 
@@ -27,8 +27,8 @@
 
 
             if(audio.currentTime>5&& audio.currentTime<6){
-                pauseAudio();
-                $( "#audio" ).unbind();
+                endSlide();
+                
             }
             
 

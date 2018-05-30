@@ -1,6 +1,6 @@
 <div id="slide" class="item">
         
-        <div id="elemento_1" class="reset elemento elemento_oculto">
+        <div id="elemento_1" class=" elemento elemento_oculto">
             <img src="images/L1_P1_6a_1.png" alt="">
         </div>
        
@@ -10,7 +10,8 @@
     <script>
     
         $('document').ready(function() {
-            playAudio();
+            startSlide();
+            
             audio_positions.push(audio.currentTime);
             $("#audio").bind("timeupdate",function(){
                 if(audio.currentTime>12&& audio.currentTime<13){
