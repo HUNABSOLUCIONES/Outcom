@@ -364,34 +364,33 @@
 /*** SLIDE 13   ***/
 
 #l6_s13_1{
-    position: absolute;
-    top: 25vh;
-    left: 20vw;
-
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 731;
 }
 
 #l6_s13_2{
     position: absolute;
-    top: 44vh;
-    left: 55vw;
-
+    top: 190;
+    left: 550;
 }
 
 #l6_s13_3{
     position: absolute;
-    top: 33.5vh;
-    left: 76.7vw;
-
+    top: 85;
+    left: 804;
 }
 
 #l6_s13_4{
     position: absolute;
-    top: 28vh;
-    left: 69vw;
-
+    top: 30;
+    left: 730;
 }
 
 
+
+/*** SLIDE 14   ***/
 #l6_s14_1{
     position: absolute;
     top: 25vh;
