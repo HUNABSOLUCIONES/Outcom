@@ -1,7 +1,7 @@
-var no_slide = 1;
+var no_slide = 2;
 var primer_slide=true;
 var init_slide = 1;
-var totalSlide = 11; /* se asigan el total de slide para la operacion de la barra superior */
+var totalSlide = 20; /* se asigan el total de slide para la operacion de la barra superior */
 var porcentaje = (no_slide * 100)/totalSlide; /* calculo de la barra de porcentaje :  no_slide * 100 / totalslides */
 var audio= document.getElementById("audio");
 var audio_positions=new Array();
@@ -90,8 +90,8 @@ function startSlide(){
 }
 
 $('body').on('click', '.next', function(event) {
-    //if(primer_slide){primer_slide=false;}else{no_slide = no_slide+1;}
-    no_slide = no_slide+1;
+    if(primer_slide){primer_slide=false;}else{no_slide = no_slide+1;}
+    //no_slide = no_slide+1;
     if(no_slide===2)$(".botonera").removeClass('ocultar');
     if(no_slide>1)$(".wrapper").fadeOut(200);
     getSlide(); 
