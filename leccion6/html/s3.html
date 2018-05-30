@@ -1,8 +1,18 @@
-<div id="slide" class="item">
+<div id="slide">
         
-        <div id="elemento_1" class=" elemento elemento_oculto">
-            <img src="images/L1_P1_6a_1.png" alt="">
+        <div id="l6_s3_1" class="elemento  ">
+            <img src="images/L6_1_1.png" alt="">
         </div>
+
+        <div id="l6_s3_2" class="elemento  ">
+            <img src="images/L6_1_3.png" alt="">
+        </div>
+
+        <div id="l6_s3_3" class="elemento  ">
+            <img src="images/L6_1_4.png" alt="">
+        </div>
+    
+        
        
     </div>
     
@@ -10,17 +20,26 @@
     <script>
     
         $('document').ready(function() {
+    
             startSlide();
             
-            audio_positions.push(audio.currentTime);
+            
             $("#audio").bind("timeupdate",function(){
                 if(audio.currentTime>12&& audio.currentTime<13){
-                    elementFadeIn("elemento_1");
-                    pauseAudio();
-                    console.log(audio_positions);
-                    $( "#audio" ).unbind();
+                    elementFadeIn("l6_s3_1");
                 }
-
+    
+    
+                if(audio.currentTime>6&& audio.currentTime<7){
+                    elementBounceIn("l6_s2_2");         
+                }
+    
+                if(audio.currentTime>11&& audio.currentTime<12){
+                    endSlide();      
+                }
+    
+                
+    
             });
         });
     </script>

@@ -17,10 +17,6 @@
 
         startSlide();
         
-        $("#audio").trigger('load');
-        $("#audio").bind("canplaythrough",function(){
-            playAudio();
-        });
         
         $("#audio").bind("timeupdate",function(){
             if(audio.currentTime>1&& audio.currentTime<2){
@@ -32,7 +28,7 @@
                 elementBounceIn("l6_s2_2");         
             }
 
-            if(audio.currentTime>11&& audio.currentTime<12){
+            if(audio.currentTime>10&& audio.currentTime<11){
                 endSlide();      
             }
 

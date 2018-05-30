@@ -18,6 +18,10 @@ function elementSlideInLoop(target){
     $("#"+target).addClass('animated slideInLeft infinite');
     $("#"+target).show();
 }
+function elementSlideInUpLoop(target){
+    $("#"+target).addClass('animated slideInUp infinite');
+    $("#"+target).show();
+}
 
 function elementBounceIn(target){
     $("#"+target).addClass('animated bounceIn');

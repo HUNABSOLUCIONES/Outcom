@@ -45,6 +45,7 @@ function pauseAudio(){
 function endSlide(){
     pauseAudio();
     $( "#audio" ).unbind();
+    $(".clickAqui").show();
     $('.pause').fadeOut();
     $('.dis_play').fadeIn();
     $(".next").fadeIn();
@@ -57,7 +58,6 @@ function endSlide(){
 }
 
 function startSlide(){
-    $('.gris').fadeOut();
     audio_positions.push(audio.currentTime);
     if ($(".dis_play").is(":visible") == true) { 
         $(".dis_play").fadeOut();
@@ -74,9 +74,18 @@ function startSlide(){
         $(".next").fadeOut();
     }
 
+    if ($(".gris").is(":visible") == true) { 
+        $(".gris").fadeOut();
+    }
+
+    if ($(".clickAqui").is(":visible") == true) { 
+        $(".clickAqui").fadeOut();
+    }
+
     if ($(".dis_next").is(":visible") != true) { 
         $(".dis_next").fadeIn();
     }
+    $("#slide").show();
     playAudio();
 }
 
