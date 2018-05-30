@@ -10,22 +10,25 @@
 <script>
 
     $('document').ready(function() {
+
         
-        var audio = document.getElementById("audio");
+        
         $("#audio").trigger('load');
-        $("#audio").on('canplaythrough',function(){
-            audioPlay();
+
+        $("#audio").bind("canplaythrough",function(){
+            playAudio();
+            audio_positions.push(audio.currentTime);
         });
         
-        audio.addEventListener("timeupdate",function(){
+        $("#audio").bind("timeupdate",function(){
             if(audio.currentTime>2&& audio.currentTime<3){
                 elementFadeIn("elemento_1");
             }
 
 
-            if(audio.currentTime>5&& audio.currentTime<5.7){
-                audio.removeEventListener("timeupdate",function(){});
-                audioPause();
+            if(audio.currentTime>5&& audio.currentTime<6){
+                pauseAudio();
+                $( "#audio" ).unbind();
             }
             
 

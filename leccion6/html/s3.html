@@ -1,6 +1,6 @@
 <div id="slide" class="item">
         
-        <div id="elemento_1" class="elemento elemento_oculto">
+        <div id="elemento_1" class="reset elemento elemento_oculto">
             <img src="images/L1_P1_6a_1.png" alt="">
         </div>
        
@@ -10,16 +10,16 @@
     <script>
     
         $('document').ready(function() {
-            var audio = document.getElementById("audio");
-
-            audioPlay();
-            
-            audio.addEventListener("timeupdate",function(){
-                if(audio.currentTime>13&& audio.currentTime<14){
+            playAudio();
+            audio_positions.push(audio.currentTime);
+            $("#audio").bind("timeupdate",function(){
+                if(audio.currentTime>12&& audio.currentTime<13){
                     elementFadeIn("elemento_1");
+                    pauseAudio();
+                    console.log(audio_positions);
+                    $( "#audio" ).unbind();
                 }
-    
-    
+
             });
         });
     </script>
