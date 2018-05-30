@@ -4,9 +4,6 @@ var init_slide = 1;
 var totalSlide = 11; /* se asigan el total de slide para la operacion de la barra superior */
 var porcentaje = (no_slide * 100)/totalSlide; /* calculo de la barra de porcentaje :  no_slide * 100 / totalslides */
 
-
-
-
 function obtenerPorcentaje(){   
     porcentaje = (no_slide * 100)/totalSlide;
 }

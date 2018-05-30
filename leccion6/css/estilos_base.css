@@ -20,9 +20,11 @@ body {
 }
 
 .logo {
-  max-width: 16.7%;
+  max-width: 15%;
   position: absolute;
   z-index: 10; 
+  top:5%;
+  left:5%;
 }
 
 #black_play{
@@ -130,7 +132,9 @@ body {
 }
 
 
+.botonera{
 
+}
 
 
 
