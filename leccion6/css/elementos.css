@@ -164,7 +164,6 @@
 
 }
 
-
 #l6_s5_2{
     position: absolute;
     top: 39.5vh;
@@ -176,5 +175,27 @@
     position: absolute;
     top: 35vh;
     left: 40vw;
+
+}
+
+
+#l6_s6_1{
+    position: absolute;
+    top: 25vh;
+    left: 20vw;
+
+}
+
+#l6_s6_2{
+    position: absolute;
+    top: 40.5vh;
+    left: 23vw;
+
+}
+
+#l6_s6_3{
+    position: absolute;
+    top: 39vh;
+    left: 30vw;
 
 }
