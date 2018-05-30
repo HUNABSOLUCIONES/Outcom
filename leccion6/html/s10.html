@@ -1,0 +1,41 @@
+<div id="slide">
+        
+        <div id="l6_s10_1" class="elemento elemento_oculto   ">
+            <img src="images/L6_9_1.png" alt="">
+        </div>
+        <div id="l6_s10_2" class="elemento elemento_oculto   ">
+            <img src="images/L6_9_2.png" alt="">
+        </div>
+
+        <div id="l6_s10_3" class="elemento elemento_oculto   ">
+            <img src="images/L6_9_3.png" alt="">
+        </div>
+
+
+</div>
+    
+    
+    <script>
+    
+        $('document').ready(function() {
+            
+            startSlide();
+            $("#audio").bind("timeupdate",function(){
+                if(audio.currentTime>80){
+                    elementFadeIn("l6_s10_1");
+                }
+
+                if(audio.currentTime>84){
+                    elementBounceIn("l6_s10_2");
+                    elementBounceIn("l6_s10_3");
+                }
+
+                if(audio.currentTime>90){
+                    endSlide();
+                }
+    
+            });
+
+        });
+    </script>
+    
