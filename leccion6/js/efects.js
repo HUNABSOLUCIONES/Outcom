@@ -23,3 +23,8 @@ function elementBounceIn(target){
     $("#"+target).addClass('animated bounceIn');
     $("#"+target).show();
 }
+
+function elementFadeInRight(target){
+    $("#"+target).addClass('animated fadeInRight');
+    $("#"+target).show();
+}

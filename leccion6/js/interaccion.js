@@ -1,8 +1,10 @@
-var no_slide = 0;
-
-var inicio = true; /* se pone la variable de inicio en verdaderdo */
+var no_slide = 1;
+var primer_slide=true;
+var init_slide = 1;
 var totalSlide = 11; /* se asigan el total de slide para la operacion de la barra superior */
 var porcentaje = (no_slide * 100)/totalSlide; /* calculo de la barra de porcentaje :  no_slide * 100 / totalslides */
+
+
 
 
 function obtenerPorcentaje(){   
@@ -26,10 +28,8 @@ function getSlide(){
         }, 
 
         complete : function(xhr, status) {
-
             $('.wrapper').html(xhr.responseText);
             bandera = true;
-        
         } 
     });
 }
@@ -37,16 +37,15 @@ function getSlide(){
 
 
 $('body').on('click', '.next', function(event) {
+    //if(primer_slide){primer_slide=false;}else{no_slide = no_slide+1;}
     no_slide = no_slide+1;
-    $(".wrapper").fadeOut();
-
+    if(no_slide>1)$(".wrapper").fadeOut(200);
+    getSlide(); 
     setTimeout(function(){
         $('.wrapper').show();
-    },2000);
+    },1500);
     
     book();
-    getSlide();   
-
 });
 
 $('body').on('click', '.prev', function(event) {
