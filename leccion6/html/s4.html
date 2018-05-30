@@ -34,10 +34,8 @@
     
         $('document').ready(function() {
             startSlide();
-            
-            
             $("#audio").bind("timeupdate",function(){
-                if(audio.currentTime>18){
+                if(audio.currentTime>19){
                     elementFadeIn("l6_s4_1");
                 }
 
@@ -47,20 +45,19 @@
                     
                 }
 
-                if(audio.currentTime>15){
-                    elementFadeOut("l6_s3_1");
-                    elementFadeOut("l6_s3_2");
-                    elementFadeOut("l6_s3_3");
+                if(audio.currentTime>33){
+                    elementFadeOut("l6_s4_1");
+                    elementFadeOut("l6_s4_2");
+                    elementFadeOut("l6_s4_3");
 
-                    elementFadeIn("l6_s3_4");
-                    elementBounceIn("l6_s3_5");
-                    elementBounceIn("l6_s3_6");
-                    
+                    elementFadeIn("l6_s4_4");
+                    elementBounceIn("l6_s4_5");
+                    elementBounceIn("l6_s4_6");
+
                 }
 
-                if(audio.currentTime>17.7){
-                    pauseAudio();
-                    setTimeout(endSlide(),3500);     
+                if(audio.currentTime>38){
+                    endSlide();
                 }
 
                 
