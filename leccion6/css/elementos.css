@@ -76,9 +76,6 @@
 
 #l6_s3_1{
     position: relative;
-    top: 50;
-    /* left: 0; */
-    /* max-width: 50px; */
     margin-left: auto;
     margin-right: auto;
     width: 731;
@@ -86,42 +83,43 @@
 
 #l6_s3_2{
     position: absolute;
-    top: 78px;
-    left: 158px;
+    top: 128;
+    left: 307;
 }
 
 #l6_s3_3{
     position: absolute;
-    top: 60px;
-    left: 220px;
+    top: 120;
+    left: 365;
 
 }
 
 #l6_s3_4{
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 731;
 
 }
 
 
 #l6_s3_5{
     position: absolute;
-    top: 39vh;
-    left: 48vw;
+    top: 78;
+    left: 468;
 
 }
-
-
-
 
 
 #l6_s3_6{
     position: absolute;
-    top: 38vh;
-    left: 53vw;
+    top: 65;
+    left: 530;
 
 }
+
+
+/*** SLIDE 4   ***/
 
 #l6_s4_1{
     position: absolute;
