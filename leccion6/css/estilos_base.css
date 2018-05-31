@@ -184,7 +184,16 @@ body {
     background-color: orange;
     position: absolute;
     top: 73px;
-    left: 50;
+    left: 80;
+  }
+  .video{
+    max-width: 25vw;
+  }
+
+  .derecha{
+    position: absolute;
+    top: 40;
+    left: 300;
   }
 }
 #slide{
