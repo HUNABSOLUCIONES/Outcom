@@ -77,7 +77,7 @@ body {
 .derecha{
   position: absolute;
   top: -100;
-  right: 35;
+  left: 500;
 }
 
 .girar1 {
@@ -169,7 +169,7 @@ body {
   top:5;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-height: 500px) {
   .wrapper {
     width: 1024px;
     height: 500px;
@@ -183,7 +183,7 @@ body {
   #slide{
     background-color: orange;
     position: absolute;
-    top: 50;
+    top: 73px;
     left: 50;
   }
 }
